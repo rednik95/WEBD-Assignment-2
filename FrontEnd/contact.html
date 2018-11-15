@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Julie Thorpe</title>
+<link href="styles/styles.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="action.js"></script>
+</head>
+<body>
+<!-- This will contain the logo with the menu bar -->
+<header>
+  <div id="logo"> <a href="index.html" title="Home">Home</a> </div>
+  <div class="dropdown">
+    <button class="dropbtn" onclick="drop()">Contact <em class="fa fa-caret-down"></em></button>
+    <div class="dropdown-content" id="mainmenu"> <a href="pub.html" title="Publication">Publication</a> <a href="press.html" title="Press">Press</a> <a href="research.html" title="Research Interest and Programs">Research Interest and Programs</a> <a href="teaching.html" title="Teaching">Teaching</a> <a href="group.html" title="Research Group">Research Group</a> <a href="contact.html" title="Contact">Contact</a> </div>
+  </div>
+  <div class= "dropdown" id="log">
+    <button class="dropbtn" onclick="drop2()">Admin <em class="fa fa-caret-down"></em></button>
+    <div class="dropdown-content" id="adminmenu"> <a href="admin/bio-admin.html" title="eBio">Edit Bio</a> <a href="admin/news-admin.html" title="eNews">Edit News</a> <a href="admin/pub-admin.html" title="ePub">Edit Publications</a> <a href="admin/press-admin.html" title="ePress">Edit Press</a> <a href="admin/research-program-admin.html" title="eProj">Edit Project List</a> <a href="admin/group-admin.html" title="eGroup">Research Group</a> <a href="admin/teaching-admin.html" title="eTeach">Edit Courses</a> <a href="admin/contact-admin.html" title="eContact">Edit Contact Info</a></div>
+  </div>
+</header>
+
+<!-- SideBar -->
+<section id="sidebar">
+  <input type="text" placeholder="Search">
+  <div id="adimage"><img src="image/headshot.jpg" alt=""/></div>
+  <nav>
+    <ul>
+      <li>julie.thorpe@uoit.ca</li>
+      <li><a href="https://www.uoit.ca/" title="Link">University of Ontario Institute of Technology (UOIT)</a></li>
+      <li>Business and Information Technology</li>
+      <li>  2000 Simcoe Street North Oshawa, Ontario, CANADA L1H 7K4</li>
+      <li>(905) 721-8668 ext. 6585 </li>
+    </ul>
+  </nav>
+</section>
+
+
+<!-- Main Content -->
+
+
+<main class="main">
+  <!-- CONTROLS THE BOARDER BACKGROUND OF CONTENT !-->
+  <div class="boarder">
+    <div style="text-align:center">
+      <h2> Contact Information</h2>
+    </div>
+
+    <!-- CONTROLS THE MAP !-->
+
+        <iframe width="80%" height="500px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"  src="http://maps.google.com/maps?client=safari&amp;q=University+of+Ontario+Institute+of+Technology%E2%80%8E+2000+Simcoe+Street+North+Oshawa,+ON+L1H+7K4,+Canada+(905)+721-8668&amp;oe=UTF-8&amp;ie=UTF8&amp;hq=(905)+721-8668&amp;hnear=University+of+Ontario+Institute+of+Technology,+2000+Simcoe+St+N,+Oshawa,+Ontario+L1H+7K4,+Canada&amp;t=m&amp;vpsrc=6&amp;ll=43.94667,-78.894281&amp;spn=0.010814,0.018239&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+
+
+
+
+  
+</main>
+
+<!-- Footer -->
+<footer>
+  <div class="copyright">
+    <p>Designed By Kenneth 	&amp; Kinder Celemin &copy; 2018</p>
+  </div>
+</footer>
+</body>
+</html>

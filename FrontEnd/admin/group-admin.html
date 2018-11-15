@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Contact Admin</title>
+<link href="../styles/styles.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="../action.js"></script>
+</head>
+<body>
+<!-- This will contain the logo with the menu bar -->
+<header>
+  <div id="logo"> <a href="../index.html" title="Home">Home</a> </div>
+  <div class="dropdown">
+    <button class="dropbtn" onclick="drop()">Menu <em class="fa fa-caret-down"></em></button>
+    <div class="dropdown-content" id="mainmenu"> <a href="../pub.html" title="Publication">Publication</a> <a href="../press.html" title="Press">Press</a> <a href="../research.html" title="Research Interest and Programs">Research Interest and Programs</a> <a href="../teaching.html" title="Teaching">Teaching</a> <a href="../group.html" title="Research Group">Research Group</a> <a href="../contact.html" title="Contact">Contact</a> </div>
+  </div>
+  <div class= "dropdown" id="log">
+    <button class="dropbtn" onclick="drop2()">Admin <em class="fa fa-caret-down"></em></button>
+    <div class="dropdown-content" id="adminmenu"> <a href="bio-admin.html" title="eBio">Edit Bio</a> <a href="news-admin.html" title="eNews">Edit News</a> <a href="pub-admin.html" title="ePub">Edit Publications</a> <a href="press-admin.html" title="ePress">Edit Press</a> <a href="research-program-admin.html" title="eProj">Edit Project List</a> <a href="group-admin.html" title="eGroup">Research Group</a> <a href="teaching-admin.html" title="eTeach">Edit Courses</a> <a href="contact-admin.html" title="eContact">Edit Contact Info</a></div>
+  </div>
+</header>
+<!-- Main Content -->
+<main class="bg-img">
+
+
+  <!-- Will i need something to change the map? !-->
+  <form id="current-group-admin" action="action_page.php" class="container">
+  <h2> Current Students </h2>
+    <label for="Name"> Name of Student </label>
+    <input type="text" name="name"  placeholder="Enter your Current Students Full Name" required>
+    <br>
+    <label for=" Role"> Enter role </label>
+    <input type="text" name="text" placeholder="Enter what was supervised" required>
+    <br>
+    <button type="submit" class="btn">Update </button>
+  </form>
+  <hr>
+
+  <!-- Will i need something to change the map? !-->
+  <form id="past-group-admin" action="action_page.php" class="container">
+   <h2> Past Students </h2>
+   <label for="Name"> Name of Student </label>
+   <input type="text" name="name"  placeholder="Enter your Past Students Full Name" required>
+   <br>
+    <label for=" Role"> Enter role </label>
+    <input type="text" name="text" placeholder="Enter what was supervised" required>
+    <br>
+    <button type="submit" class="btn">Update </button>
+  </form>
+</main>
+<footer>
+  <div class="copyright">
+    <p>Designed By Kenneth 	&amp; Kinder Celemin &copy; 2018</p>
+  </div>
+</footer>
+</body>
+</html>

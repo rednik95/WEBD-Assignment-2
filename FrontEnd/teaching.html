@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Julie Thorpe</title>
+<link href="styles/styles.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="action.js"></script>
+</head>
+<body>
+<!-- This will contain the logo with the menu bar -->
+<header>
+  <div id="logo"> <a href="index.html" title="Home">Home</a> </div>
+  <div class="dropdown">
+    <button class="dropbtn" onclick="drop()">Teaching<em class="fa fa-caret-down"></em></button>
+    <div class="dropdown-content" id="mainmenu"> <a href="pub.html" title="Publication">Publication</a> <a href="press.html" title="Press">Press</a> <a href="research.html" title="Research Interest and Programs">Research Interest and Programs</a> <a href="teaching.html" title="Teaching">Teaching</a> <a href="group.html" title="Research Group">Research Group</a> <a href="contact.html" title="Contact">Contact</a> </div>
+  </div>
+  <div class= "dropdown" id="log">
+    <button class="dropbtn" onclick="drop2()">Admin <em class="fa fa-caret-down"></em></button>
+    <div class="dropdown-content" id="adminmenu"> <a href="admin/bio-admin.html" title="eBio">Edit Bio</a> <a href="admin/news-admin.html" title="eNews">Edit News</a> <a href="admin/pub-admin.html" title="ePub">Edit Publications</a> <a href="admin/press-admin.html" title="ePress">Edit Press</a> <a href="admin/research-program-admin.html" title="eProj">Edit Project List</a> <a href="admin/group-admin.html" title="eGroup">Research Group</a> <a href="admin/teaching-admin.html" title="eTeach">Edit Courses</a> <a href="admin/contact-admin.html" title="eContact">Edit Contact Info</a></div>
+  </div>
+</header>
+
+
+
+<div class="teachingrow">
+  <div class="teachingcolumn" onclick="openTab('s1');">
+    <h3>Courses Taught At UOIT</h3>
+  </div>
+  <div class="teachingcolumn" onclick="openTab('s2');">
+    <h3>Courses Taught At Carelton</h3>
+  </div>
+</div>
+
+<div id="s1" class="containerTab" style="display:none">
+
+<span onclick="this.parentElement.style.display='none'" class="closebtn">X</span>
+
+  <ul>
+    <li>Winter 2016: MITS 5300 (Operating System Security)</li>
+    <li>Winter 2016: INFR 3610 (Operating System Security)</li>
+    <li>Fall 2014: INFR 4680 (IT Security Policies and Procedures; co-taught)</li>
+    <li>Winter 2014: MITS 5300 (Operating System Security)</li>
+    <li>Winter 2014: INFR 3610 (Operating System Security)</li>
+    <li>Fall 2013: INFR 4670 (Malware and Software Security)</li>
+    <li>Fall 2013: INFR 4680 (IT Security Policies and Procedures)</li>
+    <li>Winter 2013: MITS 5300 (Operating System Security)</li>
+    <li>Winter 2013: INFR 3610 (Operating System Security)</li>
+    <li>Fall 2012: INFR 4670 (Malware and Software Security)</li>
+    <li>Fall 2012: INFR 4680 (IT Security Policies and Procedures)</li>
+    <li>Winter 2012: MITS 5300 (Operating System Security)</li>
+    <li>Winter 2012: INFR 3610 (Operating System Security)</li>
+    <li>Fall 2011: INFR 4670 (Malware and Software Security)</li>
+    <li>Fall 2011: INFR 4680 (IT Security Policies and Procedures)</li>
+    <li>Winter 2011: MITS 5300 (Operating System Security)</li>
+    <li>Winter 2011: INFR 3610 (Operating System Security)</li>
+    <li>Fall 2010: INFR 4680 (IT Security Policies and Procedures)</li>
+  </ul>
+</div>
+
+<div id="s2" class="containerTab" style="display:none">
+
+<span onclick="this.parentElement.style.display='none'" class="closebtn">X</span>
+
+  <ul>
+      <li>Winter 2010: COMP 4109 (Applied Cryptography)</li>
+      <li>Winter 2009: COMP 4109 (Applied Cryptography)</li>
+  </ul>
+</div>
+
+
+
+
+<footer>
+  <div class="copyright">
+    <p>Designed By Kenneth Obeng 	&amp; Kinder Celemin &copy; 2018</p>
+  </div>
+</footer>
+</body>
+
+
+
+
+</html>
